@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-19",
+  "title": "\"AI \u65f6\u4ee3\u8d22\u5bcc\u81ea\u7531\u6700\u5927\u7684\u5e7b\u89c9\uff1a\u4ee5\u4e3a\u6512\u591f\u94b1\u662f\u7ec8\u70b9\uff0c\u5176\u5b9e\u672c\u91d1\u4ece\u90a3\u5929\u8d77\u624d\u300c\u4e0d\u53ef\u518d\u751f\u300d\"",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-10-19",
+  "media_id": "",
+  "archived_at": "2026-10-20T07:34:23+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
