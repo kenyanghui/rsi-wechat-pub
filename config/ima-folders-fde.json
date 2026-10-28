@@ -1,0 +1,13 @@
+{
+  "_comment": "FDE 线（RSIClaw协作区 ima_kb_5d64wmZd，KB id 会轮换——用名称按 get_addable 刷新）",
+  "kbName": "RSIClaw协作区",
+  "kbId": "ima_kb_5d64wmZd",
+  "collectFolders": [
+    {"path": "1.AI工程实战",     "folderId": "{{FILL_ME}}", "route": "AI 编程/工程实践/落地案例"},
+    {"path": "2.Agent与多智能体", "folderId": "{{FILL_ME}}", "route": "Agent 系统/多智能体/编排（默认归类）"},
+    {"path": "3.工具链与底座",   "folderId": "{{FILL_ME}}", "route": "开发工具链/底座/工作流"},
+    {"path": "4.行业观察",       "folderId": "{{FILL_ME}}", "route": "AI 行业/研发组织/效能动态"}
+  ],
+  "defaultCollectFolder": "2.Agent与多智能体",
+  "syncbackFolder": {"path": "5.公众号文章", "folderId": "{{FILL_ME}}", "purpose": "成稿回写专存"}
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# rsi-wechat 内容流水线「失败自愈」看门狗 v1.6.0（多线版）
+# rsi-wechat 内容流水线「失败自愈」看门狗 v1.6.2（多线版+全局互斥；yang 已迁K马Hermes 2026-10-21）
 # 用途：由 cron 命令任务定时调用，检测各内容线当日产物是否完整，
 #       不完整（断链/漏跑/主控睡死）则自动触发该线主任务续跑（每日每线最多 MAX_RETRY 次）。
 #
@@ -38,7 +38,7 @@ NOW_HHMM="$(TZ="${TZ_NAME}" date +%H%M)"
 
 # 线配置表（分号分隔，每线 6 字段）：
 #   线名|产物子目录|主任务JOB_ID|漏跑时刻HHMM|产物闸门HHMM|生效日YYYY-MM-DD
-LINES="${WATCHDOG_LINES:-quant|pipeline|a1687335-482e-4b24-ba14-527099ec9193|0750|0800|2026-01-01;edu|pipeline-edu|cb8c27f8-2c58-4103-8958-1ad01b46b235|0636|0650|2026-01-01;fe|pipeline-fe|aa370941-49e3-4f29-a5f1-7b8fce3fe471|0838|0850|2026-10-04}"
+LINES="${WATCHDOG_LINES:-quant|pipeline|a1687335-482e-4b24-ba14-527099ec9193|0930|0915|2026-01-01;edu|pipeline-edu|cb8c27f8-2c58-4103-8958-1ad01b46b235|0636|0650|2026-01-01;fe|pipeline-fe|aa370941-49e3-4f29-a5f1-7b8fce3fe471|0710|0655|2026-10-04;xg|pipeline-xg|fea801c8-b7b0-416a-a165-dc56db649bd3|1730|1715|2026-10-20;fde|pipeline-fde|36456430-73f5-4a63-bd14-fa33bb60afa6|1030|1015|2026-10-29}"
 
 ANY_ACTION=0
 IFS=';' read -ra LINE_ARR <<< "${LINES}"
@@ -105,6 +105,15 @@ try:
 except Exception: print('unknown')
 " 2>/dev/null)"
   [ "${RUNNING}" = "yes" ] && continue
+
+  # ---- 触发前安全检查 3：任何线近10分钟有写入（全局互斥，防多线并发撞车 v1.6.1）----
+  for OD in pipeline pipeline-edu pipeline-fe pipeline-xg pipeline-yang; do
+    for OOFF in 0 1; do
+      ODIR="${PIPELINE_ROOT_BASE}/${OD}/$(TZ="${TZ_NAME}" date -d "-${OOFF} days" +%F)"
+      [ -d "${ODIR}" ] || continue
+      if [ -n "$(find "${ODIR}" -type f -newermt "-10 minutes" 2>/dev/null | head -1)" ]; then continue 2; fi
+    done
+  done
 
   # ---- 限次防循环 ----
   COUNT=0
