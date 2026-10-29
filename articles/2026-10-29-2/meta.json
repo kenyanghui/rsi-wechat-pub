@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "title": "\u5927\u6a21\u578b\u8d8a\u5f3a\uff0cPalantir \u8d8a\u8d5a\u94b1\uff1a\u88ab\u8bef\u8bfb\u7684\u62a4\u57ce\u6cb3\uff0c\u85cf\u5728\u300c\u672c\u4f53\u8d44\u4ea7\u300d\u91cc",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-10-29",
+  "media_id": "",
+  "archived_at": "2026-10-29T09:19:24+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
