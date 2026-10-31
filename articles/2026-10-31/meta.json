@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-31",
+  "title": "\u540c\u4e00\u4e2a GPT-5.1\uff0c\u4e00\u8fb9 17% \u8d85\u989d\uff0c\u4e00\u8fb9\u8d1f\u6536\u76ca",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-10-31",
+  "media_id": "",
+  "archived_at": "2026-10-31T09:19:19+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
