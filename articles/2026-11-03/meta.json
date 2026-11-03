@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-03",
+  "title": "30 \u5206\u949f\u30015 \u7f8e\u5143\u62c6\u5f00\u540c\u82b1\u987a iFinD\uff1a\u5165\u53e3\u5728\u8d2c\u503c\uff0c\u6570\u636e\u7ec4\u7ec7\u80fd\u529b\u5728\u5347\u503c",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-03",
+  "media_id": "",
+  "archived_at": "2026-11-03T09:37:47+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
