@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-04",
+  "title": "\u7ffb\u4e86 500 \u4e2a Reddit \u5e16\u5b50\uff1a\u771f\u6b63\u7528 AI \u8d5a\u5230\u94b1\u7684\u4eba\uff0c\u53ea\u505a\u5bf9\u4e86\u8fd9 3 \u4ef6\u4e8b",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-04",
+  "media_id": "",
+  "archived_at": "2026-11-04T09:30:27+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
