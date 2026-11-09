@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-09",
+  "title": "\u4e00\u4e2a Codex \u5fd9\u4e86 22 \u5c0f\u65f6\uff0c\u8d5a\u4e86 16.88 \u7f8e\u5143\uff1aAI \u5e2e\u666e\u901a\u4eba\u8d5a\u94b1\u7684\u7b2c\u4e00\u58f0\u67aa\u54cd",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-09",
+  "media_id": "",
+  "archived_at": "2026-11-09T09:51:39+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
