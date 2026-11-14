@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-14",
+  "title": "41.3k\u661f\uff01Anthropic \u628a\u534e\u5c14\u8857\u5206\u6790\u5e08\u7684 SOP \u5f00\u6e90\u4e86\uff1a\u62c6\u5b8c\u8fd9\u5957\u91d1\u878d\u5957\u4ef6\uff0c\u6211\u770b\u5230\u666e\u901a\u4eba\u7684\u300c\u4e00\u4eba\u6295\u7814\u90e8\u300d",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-14",
+  "media_id": "",
+  "archived_at": "2026-11-14T09:57:02+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
