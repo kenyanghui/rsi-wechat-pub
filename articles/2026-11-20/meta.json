@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-20",
+  "title": "\u522b\u518d\u79df AI \u4e86\uff0c\u517b\u4e00\u4e2a\uff1aHermes \u4e0e\u666e\u901a\u4eba\u7b2c\u4e00\u4ef6\u300c\u4f1a\u81ea\u5df1\u957f\u5927\u300d\u7684\u6570\u5b57\u8d44\u4ea7",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-20",
+  "media_id": "",
+  "archived_at": "2026-11-20T11:38:22+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
