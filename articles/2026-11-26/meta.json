@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-26",
+  "title": "\"Build \u7684\u5feb\u611f\u662f\u8d1f\u503a\uff0c\u4ea4\u4ed8\u7684\u9a8c\u6536\u624d\u662f\u8d44\u4ea7\uff1aAI \u8d22\u5bcc\u81ea\u7531\u7684\u7b2c\u4e00\u9053\u9a8c\u6536\u5355\"",
+  "source_pipeline": "/root/agents/shared/pipeline/2026-11-26",
+  "media_id": "",
+  "archived_at": "2026-11-26T12:30:52+08:00",
+  "files": {
+    "article": "article.md",
+    "cover": "cover.png",
+    "images_dir": "images/"
+  }
+}
